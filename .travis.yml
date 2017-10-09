@@ -1,17 +1,17 @@
 language: python
 os:
-  - osx
-  - linux
+- linux
 python:
-  - "2.7"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev" # 3.5 development branch
-  - "3.6"
-  - "3.6-dev" # 3.6 development branch
-# command to install dependencies
+- '2.7'
+- '3.4'
+- '3.5'
+- 3.5-dev
+- '3.6'
+- 3.6-dev
 install:
-  - pip install -r requirements.txt
-# command to run tests
+- pip install -r requirements.txt
 script:
-  - python -m unittest # or py.test for Python versions 3.5 and below
+- python -m unittest
+notifications:
+  slack:
+    secure: dbdWiGnGlbq36B1uUvz9gvZqGv/z9pqUo05tKlPSHnLHNY+6+ywxcQUqgg/941xRL1gXQydgA8xen8es5JTHh8y4U9U/6SU8aJDRqiQKkl+0KNGbRwM0gZoB+3p7InqjpUT02I8rLuAyykjh536ZSD8kJ0fFW+0pdupmQ3SEK244Yb2dmc/nwKqsru19FW51UkknAF8e7HOm5L23l58Vw08JUqhX2U/GZPxGwFhujIqKh+Zil8h6dajVaaZdjxhcnchlGHMNUKLVCKczFPV/qOZbPLJ4bM4mrfK4/GCsg0H99caPU4JGmmg7uwJip3q0t4VAjTd1imnVZuFv3JWQMK+54Tj2M4DmG2f/aoBLiAPMHpAcKmEKEDYLdAfZnujqVZqqMs6UpsT6Ab4T9lCtUCQFZe4yaewdW3mlkq5+hCwcdIBbsSjjgWECxphCFBwKnGJUpnp9M33UQ5I1zuduP0D07NXnedBgy0QqDHFRlS3HGmB6xcGTRsu/6y40V7X6h5Hx2FLLxpeGUWhheuVm/aiQAq36MSR8ApnrapJOoISkwQ0SNt4FexorCS5qr/2AtyVhJjhmUPQczn7CX7atRSb6OPKdETmAMbOX4lSpfmKgKsRxYiqQl1JPeJMPVG2IpNb8cGN7TLgh1aAJ7g7kooQoCKYrKoY1ylEtZATxsOM=
